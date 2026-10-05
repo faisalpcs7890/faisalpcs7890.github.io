@@ -73,5 +73,5 @@
 </section>
 </main>
 <footer>© 2026 Faisal Ilam Din · ACCA · Tax & Finance Professional</footer>
-<script src="script.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{const items=document.querySelectorAll(".reveal");const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target)}}),{threshold:.12});items.forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+"ms";io.observe(el)})});</script>
 </body></html>

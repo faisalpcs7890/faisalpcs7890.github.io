@@ -30,3 +30,16 @@ footer{background:#041323;color:#8097a9;padding:28px 8%;display:flex;align-items
 .client-logo .rk{background:linear-gradient(145deg,#4a2530,#bd5c72)}
 @media(max-width:800px){.client-grid .client-logo{min-height:105px;padding:15px}.client-logo .logo-symbol{width:46px;height:46px;flex-basis:46px}.client-logo section b{font-size:12px}}
 @media(max-width:520px){.client-grid .client-logo{min-height:100px}.client-logo .logo-symbol{width:42px;height:42px;flex-basis:42px}.client-logo section b{font-size:11px}.client-logo section small{font-size:7px}}
+
+.service-grid article{grid-template-columns:58px 1fr;gap:18px;position:relative}
+.service-icon{width:54px;height:54px;border-radius:10px;display:grid;place-items:center;background:#eef8fc;border:1px solid #cde7f2;position:relative;overflow:hidden}
+.service-icon:after{content:"";position:absolute;width:32px;height:32px;border:1px solid #159fe844;border-radius:50%}
+.service-icon i{font-style:normal;font:700 22px Manrope;color:#138bc1;position:relative;z-index:1}
+.service-no{display:block;color:#159fe8;font:700 9px Manrope;letter-spacing:2px;margin-bottom:4px}
+.service-grid article:nth-child(2) .service-icon{background:#f0f7fc}.service-grid article:nth-child(2) .service-icon i{color:#176b9b}
+.service-grid article:nth-child(3) .service-icon{background:#edf9f6}.service-grid article:nth-child(3) .service-icon i{color:#168c78}
+.service-grid article:nth-child(4) .service-icon{background:#f4f5fb}.service-grid article:nth-child(4) .service-icon i{color:#5668a5}
+.service-grid article:nth-child(5) .service-icon{background:#f8f5ef}.service-grid article:nth-child(5) .service-icon i{color:#9a7339}
+.service-grid article:nth-child(6) .service-icon{background:#f4f7fb}.service-grid article:nth-child(6) .service-icon i{color:#52759b}
+.service-grid article:hover .service-icon{transform:translateY(-2px);box-shadow:0 8px 18px #159fe820}
+@media(max-width:520px){.service-grid article{grid-template-columns:50px 1fr;gap:12px}.service-icon{width:48px;height:48px}.service-icon i{font-size:19px}}
